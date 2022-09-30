@@ -247,4 +247,8 @@
     <string name="show_permissions_hub">Show permissions hub</string>
     <string name="show_permissions_hub_summary">Display privacy indicators in QS</string>
 
+     <!-- Pocket mode -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
 </resources>
