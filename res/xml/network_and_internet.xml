@@ -52,6 +52,14 @@
         settings:userRestriction="no_config_mobile_networks"
         settings:useAdminDisabledSummary="true" />
 
+    <Preference
+        android:key="traffic"
+        android:fragment="com.android.settings.custom.Traffic"
+        android:order="-10"
+        android:icon="@drawable/ic_traffic"
+        android:title="@string/traffic_title"
+        android:summary="@string/traffic_summary" />
+
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="airplane_mode"
         android:title="@string/airplane_mode"
@@ -119,6 +127,14 @@
         android:dialogLayout="@layout/private_dns_mode_dialog"
         android:positiveButtonText="@string/save"
         android:negativeButtonText="@android:string/cancel"/>
+
+    <ListPreference
+        android:key="active_sim_settings"
+        android:title="@string/active_sim_tittle"
+        android:dialogTitle="@string/active_sim_summary"
+        android:order="22"
+        android:entries="@array/active_sim_entries"
+        android:entryValues="@array/active_sim_values" />
 
     <Preference
         android:fragment="com.android.settings.network.AdaptiveConnectivitySettings"
